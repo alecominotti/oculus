@@ -65,8 +65,8 @@ class Oculus {
     }
   }
 
-  void eye2() {
-    this.eye2(x, y, 300, cc*0.01);
+  void eye2(float c2) {
+    this.eye2(x, y, 300, c2*0.01);
   } 
 
   void eye2(float xPos, float yPos, float size, float amplitude) { //increment amplitude slowly for coolness

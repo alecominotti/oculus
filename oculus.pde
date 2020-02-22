@@ -41,12 +41,3 @@ void draw() {
   //figura.circle(x, y, size, 0.01, map(cos(cc*0.2), -1, 1, 0.01, 0.015), 0.004 , 0.6); // try with oculus on false
   cc+=0.1;
 }
-
-void keyPressed() {
-  if (key==' ') {
-    frec2=random(0, 1);
-    cc=0;
-    background(0);
-    figura.stars(700);
-  }
-}

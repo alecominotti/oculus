@@ -4,8 +4,9 @@
 
 ## Oculus v0.1
 
-The Oculus is a class that lets you create and animate some weird shapes.
-It draws thousands of ellipses on the screen with the help of the popular sin() and cos() functions.
+The Oculus is a class that lets you create and animate strange shapes.
+It does so by drawing thousands of ellipses on the screen with the help of the popular sin() and cos() functions.
+Changing the parameters will give you a lot of different shapes.
 
 **You need to initialize an Oculus object with a boolean value.** 
 If is set to ```true```, it will stop drawing after a few seconds (when using the draw() method), by reducing the size of its ellipses.
@@ -41,8 +42,9 @@ On other methods, the result may be different.
 * Draws default circle if the Oculus is initialized on ```false```
 
 
-## eye2()
+## eye2(c2)
 * A variant of the default eye. Run it with the Oculus initialized on ```false```.
+  - float c2: speed of the shape
 
 
 ## eye2(xPos, yPos, size, amplitude)
@@ -140,7 +142,7 @@ void setup() {
 }
 
 void draw() { 
-  figure.eye2();
+  figure.eye2(cc);
   cc+=0.1;
 }
 ```
