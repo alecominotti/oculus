@@ -1,8 +1,8 @@
 # oculus :black_circle:
 
-![Oculus](https://github.com/alecominotti/oculus/blob/master/eye.gif?raw=true)
+![Oculus](https://raw.githubusercontent.com/alecominotti/oculus/master/eye.gif)
 
-The Oculus is a class that lets you create and animate cool shapes. 
+The Oculus is a class that lets you create and animate some weird ass shapes.
 It draws ellipses on the canvas with the help of the popular sin() and cos() functions.
 
 **You need to initialize an Oculus object with a boolean value.** 
