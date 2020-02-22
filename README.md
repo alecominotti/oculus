@@ -1,6 +1,6 @@
 # oculus :black_circle:
 
-<center> ![Oculus](https://github.com/alecominotti/oculus/blob/master/eye.gif?raw=true) </center>
+![Oculus](https://github.com/alecominotti/oculus/blob/master/eye.gif?raw=true)
 
 The Oculus is a class that lets you create and animate cool shapes. 
 It draws ellipses on the canvas with the help of the popular sin() and cos() functions.
@@ -19,11 +19,11 @@ On other methods, the result may be different.
 * Draws default eye statically. Run this only in setup()
 
 
-# draw()
-* Draws default eye
+## draw()
+* Draws default animated eye.
 
 
-# draw(x, y, size, frec1, frec2, speed, density, thickness)
+## draw(x, y, size, frec1, frec2, speed, density, thickness)
 * Draws a wide variety of shapes depending on the parameters
   - float x: x-coordinate of the shape
   - float y: y-coordinate of the shape
@@ -35,15 +35,15 @@ On other methods, the result may be different.
   - float thickness: thickness of ellipses drawn
 
 
-# circle()
+## circle()
 * Draws default circle if the Oculus is initialized on false
 
 
-# eye2()
+## eye2()
 * A variant of the default eye
 
 
-# eye2(xPos, yPos, size, amplitude)
+## eye2(xPos, yPos, size, amplitude)
 * Draws an eye-like shape and changes depending on the parameters
   - float xPos: x-coordinate of the shape
   - float yPos: y-coordinate of the shape
@@ -52,7 +52,7 @@ On other methods, the result may be different.
 
 
 
-# circle(xPos, yPos, size, frec1, frec2, speed, density, thickness)
+## circle(xPos, yPos, size, frec1, frec2, speed, density, thickness)
 * Draws a circle-like shape and changes depending on the parameters
   - float xPos: x-coordinate of the shape
   - float yPos: y-coordinate of the shape
@@ -64,7 +64,7 @@ On other methods, the result may be different.
 
 ------------------------------------------------------------------------------
 
- # Examples:
+# Examples:
 
  ```java
 float x; //centered x
@@ -82,7 +82,7 @@ Oculus figure;
 }
 
 void draw() {
-  //figura.eye2(x,y,cc*10,cc*0.05);
+  figura.eye2(x,y,cc*10,cc*0.05);
   c+=0.1;
 }
 ```
