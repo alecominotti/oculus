@@ -2,6 +2,8 @@
 
 ![Oculus](https://raw.githubusercontent.com/alecominotti/oculus/master/eye.gif)
 
+## Oculus v0.1
+
 The Oculus is a class that lets you create and animate some weird ass shapes.
 It draws ellipses on the canvas with the help of the popular sin() and cos() functions.
 
@@ -62,11 +64,15 @@ On other methods, the result may be different.
   - float thickness: thickness of ellipses drawn
   - int amplitude: value that multiplies the cos() function
 
+## stars(cant)
+* Draws ```cant``` stars in the background
+  - int cant: ammount of stars in the background
+
 ------------------------------------------------------------------------------
 
 # Note:
-  ###Try not only different (and variable!) values for the parameters, but also different combinations by using (or not) functions like background() and setting the Oculus on ```true``` or ```false```
-------------------------------------------------------------------------------
+  - Try not only different (and variable!) values for the parameters, but also different combinations by using (or not) functions like background() and initalizing the Oculus on ```true``` or ```false```
+
 ------------------------------------------------------------------------------
 
 # Examples:
@@ -94,8 +100,7 @@ void draw() {
 }
 
 ```
-
-
+------------------------------------------------------------------------------
  ```java
 float x; //centered x
 float y; //centered y
@@ -119,7 +124,5 @@ void draw() {
 ```
 
 ------------------------------------------------------------------------------
-------------------------------------------------------------------------------
-
-
 **Ale Cominotti - 2020**
+------------------------------------------------------------------------------
