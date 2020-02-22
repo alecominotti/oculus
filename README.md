@@ -1,6 +1,6 @@
 # oculus :black_circle:
 
-<div align="center"> ![Oculus](https://github.com/alecominotti/oculus/blob/master/eye.gif?raw=true) </div>
+<p align="center"> ![Oculus](https://github.com/alecominotti/oculus/blob/master/eye.gif?raw=true) </p>
 
 The Oculus is a class that lets you create and animate cool shapes. 
 It draws ellipses on the canvas with the help of the popular sin() and cos() functions.
