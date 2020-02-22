@@ -16,5 +16,8 @@ Figure (float xPos, float yPos, float diam, float frecuencia1, float frecuencia2
    frec2= frecuencia2;
    grosor= gro;
    }
+  
    
+hola bb
+
 */

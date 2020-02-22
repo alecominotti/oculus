@@ -23,6 +23,12 @@ class Oculus {
    this.vanish = val;
    return this.vanish;
  }
+ 
+  void eye() {  //don't use inside draw()
+    for (int i=0; i<= 750; i++) {
+      this.draw();
+    }
+  }
 
   void draw() { //default eye
     diametro=sin(c*0.1)*550;
@@ -45,13 +51,7 @@ class Oculus {
     c+=speed;
   }
 
-  void eye() {  //don't use inside draw()
-    for (int i=0; i<= 750; i++) {
-      this.draw();
-    }
-  }
-
-  void circle() { //default circle
+  void circle() { //default circle, run with oculus on false
     this.circle(x, y, size, 0.01, 0.01, 0.04, 1);
   }
 
@@ -73,7 +73,7 @@ class Oculus {
     this.circle(xPos, yPos, size, 0.01, 0.05, 0.005, amplitude);
   }
 
-  void generateFigure(float x, float y, float diametro, float frecuencia1, float frecuencia2, int density, float grosor) {
+  private void generateFigure(float x, float y, float diametro, float frecuencia1, float frecuencia2, int density, float grosor) {
     fill(random(255), random(255), 255);
     float count= 0;
     float xSin;

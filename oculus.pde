@@ -8,25 +8,26 @@ float cc=0; //counter for Sin and Cos functions
 Oculus figura;
 
 void setup() {
-  size(950, 540);
+  size(1920, 1080);
   frameRate(60);
   background(0);
   noStroke();
   x= width/2;
   y= height/2;
   figura= new Oculus(true);
-  stars(500);
+  stars(700);
 }
 
 void draw() {
   //background(0);
   
-  figura.draw(); //try without background() function
+  //figura.draw(); //try without background() function
   
   //-----------------------------------------------------------------------------------------------------------------
   // eye2() examples:
-  //figura.eye2();
   //figura.eye2(x,y,cc*10,cc*0.05); // try with oculus on true, and NO background()
+  figura.eye2(); // try with oculus on true
+  
   
   //-----------------------------------------------------------------------------------------------------------------
   //draw() examples:
@@ -39,7 +40,6 @@ void draw() {
   //figura.circle(x, y, 350, 0.1, 0.2, sin(cc*0.5)*0.1, 0.5); // try with oculus on true
   //figura.circle(x, y, size, 0.01, map(cos(cc*0.2), -1, 1, 0.01, 0.015), 0.004 , 0.6); // try with oculus on false
   cc+=0.1;
-  saveFrame("eye-####.png"); 
 }
 
 void keyPressed() {
