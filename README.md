@@ -76,7 +76,7 @@ On other methods, the result may be different.
 ------------------------------------------------------------------------------
 
 # Examples:
-#### Copy and paste, I swear it works. Maybe.
+#### Copy and paste them, I swear they work. Maybe.
 
  ```java
 float x; //centered x
@@ -146,5 +146,7 @@ void draw() {
 ```
 
 ------------------------------------------------------------------------------
+
 **Ale Cominotti - 2020**
+
 ------------------------------------------------------------------------------
