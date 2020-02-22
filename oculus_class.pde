@@ -15,15 +15,15 @@ class Oculus {
     this.vanish= van;
   }
 
- boolean getVanish(){
-   return this.vanish;
- }
- 
- boolean setVanish(boolean val){
-   this.vanish = val;
-   return this.vanish;
- }
- 
+  boolean getVanish() {
+    return this.vanish;
+  }
+
+  boolean setVanish(boolean val) {
+    this.vanish = val;
+    return this.vanish;
+  }
+
   void eye() {  //don't use inside draw()
     for (int i=0; i<= 750; i++) {
       this.draw();
@@ -52,7 +52,7 @@ class Oculus {
   }
 
   void circle() { //default circle, run with oculus on false
-    this.circle(x, y, size, 0.01, 0.01, 0.04, 1);
+    this.circle(x, y, diametro, 0.01, 0.01, 0.04, 1);
   }
 
   void circle(float xPos, float yPos, float size, float frec1, float frec2, float thickness, float amplitude) {
@@ -65,10 +65,10 @@ class Oculus {
     }
   }
 
-  void eye2(){
-    this.eye2(x,y,300,cc*0.01);
+  void eye2() {
+    this.eye2(x, y, 300, cc*0.01);
   } 
-  
+
   void eye2(float xPos, float yPos, float size, float amplitude) { //increment amplitude slowly for coolness
     this.circle(xPos, yPos, size, 0.01, 0.05, 0.005, amplitude);
   }
@@ -85,6 +85,13 @@ class Oculus {
         ellipse(xSin + x, yCon + y, grosor, grosor);
         count+=1;
       }
+    }
+  }
+
+  void stars(int cant) { // call it from setup
+    fill(255);
+    for (int i=0; i<cant; i++) {
+      ellipse(random(width), random(height), random(0.3, 1.5), random(0.3, 1.5));
     }
   }
 } 

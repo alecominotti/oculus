@@ -65,10 +65,12 @@ On other methods, the result may be different.
 ------------------------------------------------------------------------------
 
 # Note:
-Try not only different (and variable!) values for the parameters, but also different combinations by using (or not) functions like background() and setting the Oculus on ```true``` or ```false```
+  ###Try not only different (and variable!) values for the parameters, but also different combinations by using (or not) functions like background() and setting the Oculus on ```true``` or ```false```
+------------------------------------------------------------------------------
 ------------------------------------------------------------------------------
 
 # Examples:
+#### Copy and paste, I swear it works. Maybe.
 
  ```java
 float x; //centered x
@@ -76,19 +78,21 @@ float y; //centered y
 float cc=0; //counter for variations
 Oculus figure;
 
- void setup() {
+void setup() {
   size(1920, 1080);
   background(0);
   noStroke();
   x= width/2;
   y= height/2;
   figure= new Oculus(true);
+  figure.stars(700);
 }
 
 void draw() {
-  figura.eye2(x,y,cc*10,cc*0.05);
-  c+=0.1;
+  figure.eye2(x, y, cc*10, cc*0.05);
+  cc+=0.1;
 }
+
 ```
 
 
@@ -104,16 +108,18 @@ void setup() {
   noStroke();
   x= width/2;
   y= height/2;
-  figura= new Oculus(false);
-
+  figure= new Oculus(false);
 }
 
 void draw() {
   background(0); 
-  figura.circle(x,y, (sin(cc*0.05)*300)+200, 0.06, sin(cc*0.1)*0.5, 0.01, 0.1);
+  figure.circle(x,y, (sin(cc*0.05)*300)+200, 0.06, sin(cc*0.1)*0.2, 0.01, 0.1);
   cc+=0.1;
 }
 ```
+
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
 
 
 **Ale Cominotti - 2020**
