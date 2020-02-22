@@ -64,6 +64,10 @@ On other methods, the result may be different.
 
 ------------------------------------------------------------------------------
 
+# Note:
+Try not only different (and variable!) values for the parameters, but also different combinations by using (or not) functions like background() and setting the Oculus on ```true``` or ```false```
+------------------------------------------------------------------------------
+
 # Examples:
 
  ```java
