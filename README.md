@@ -4,8 +4,8 @@
 
 ## Oculus v0.1
 
-The Oculus is a class that lets you create and animate some weird ass shapes.
-It draws ellipses on the canvas with the help of the popular sin() and cos() functions.
+The Oculus is a class that lets you create and animate some weird shapes.
+It draws thousands of ellipses on the screen with the help of the popular sin() and cos() functions.
 
 **You need to initialize an Oculus object with a boolean value.** 
 If is set to ```true```, it will stop drawing after a few seconds (when using the draw() method), by reducing the size of its ellipses.
