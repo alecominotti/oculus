@@ -1,20 +1,27 @@
 # oculus :black_circle:
 
-<p align="center"> ![Oculus](https://github.com/alecominotti/oculus/blob/master/eye.gif?raw=true) </p>
+<center> ![Oculus](https://github.com/alecominotti/oculus/blob/master/eye.gif?raw=true) </center>
 
 The Oculus is a class that lets you create and animate cool shapes. 
 It draws ellipses on the canvas with the help of the popular sin() and cos() functions.
 
-**You need to initialize an Oculus object with a boolean value.** If is set to ```true```, it will stop drawing after a few seconds when using the draw() method, by reducing the size of the ellipses. If is set to ```false```, it won't stop drawing when using the draw() method. On other methods, the result is different.
+**You need to initialize an Oculus object with a boolean value.** 
+If is set to ```true```, it will stop drawing after a few seconds (when using the draw() method), by reducing the size of its ellipses.
+If is set to ```false```, it won't stop drawing.
+On other methods, the result may be different.
+
 
 
 **You can create and animate the shapes just by calling one of the following methods:**
 
-# eye()
+
+## eye()
 * Draws default eye statically. Run this only in setup()
+
 
 # draw()
 * Draws default eye
+
 
 # draw(x, y, size, frec1, frec2, speed, density, thickness)
 * Draws a wide variety of shapes depending on the parameters
@@ -27,11 +34,14 @@ It draws ellipses on the canvas with the help of the popular sin() and cos() fun
   - int density: density of ellipses drawn
   - float thickness: thickness of ellipses drawn
 
+
 # circle()
 * Draws default circle if the Oculus is initialized on false
 
+
 # eye2()
 * A variant of the default eye
+
 
 # eye2(xPos, yPos, size, amplitude)
 * Draws an eye-like shape and changes depending on the parameters
@@ -39,6 +49,7 @@ It draws ellipses on the canvas with the help of the popular sin() and cos() fun
   - float yPos: y-coordinate of the shape
   - float size: size of the shape
   - int amplitude: value that multiplies the cos() function
+
 
 
 # circle(xPos, yPos, size, frec1, frec2, speed, density, thickness)
@@ -75,6 +86,7 @@ void draw() {
   c+=0.1;
 }
 ```
+
 
  ```java
 float x; //centered x
