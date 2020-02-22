@@ -22,7 +22,7 @@ On other methods, the result may be different.
 
 
 ## draw()
-* Draws default animated eye.
+* Draws default animated eye (as shown above).
 
 
 ## draw(x, y, size, frec1, frec2, speed, density, thickness)
@@ -38,11 +38,11 @@ On other methods, the result may be different.
 
 
 ## circle()
-* Draws default circle if the Oculus is initialized on false
+* Draws default circle if the Oculus is initialized on ```false```
 
 
 ## eye2()
-* A variant of the default eye
+* A variant of the default eye. Run it with the Oculus initialized on ```false```.
 
 
 ## eye2(xPos, yPos, size, amplitude)
@@ -119,6 +119,28 @@ void setup() {
 void draw() {
   background(0); 
   figure.circle(x,y, (sin(cc*0.05)*300)+200, 0.06, sin(cc*0.1)*0.2, 0.01, 0.1);
+  cc+=0.1;
+}
+```
+------------------------------------------------------------------------------
+ ```java
+float x; //centered x
+float y; //centered y
+float cc=0; //counter for variations
+Oculus figure;
+
+void setup() {
+  size(1920, 1080);
+  background(0);
+  noStroke();
+  x= width/2;
+  y= height/2;
+  figure= new Oculus(true);
+  figure.stars(700);
+}
+
+void draw() { 
+  figure.eye2();
   cc+=0.1;
 }
 ```
