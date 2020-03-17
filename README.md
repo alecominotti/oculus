@@ -4,7 +4,7 @@
 
 ## Oculus v0.1
 
-The Oculus is a class that lets you create and animate strange shapes.
+Oculus is a class that lets you create and animate strange shapes.
 It does so by drawing thousands of ellipses on the screen with the help of the popular sin() and cos() functions.
 Changing the parameters will give you a lot of different shapes.
 
